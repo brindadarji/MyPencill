@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mypencill.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <ImageView
+        android:id="@+id/handle"
+       android:layout_width="40dp"
+       android:layout_height="40dp"
+        android:src="@drawable/cir_up" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"  
+            android:background="#000000">
+            
+        <LinearLayout
+            android:id="@+id/LPencil"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:layout_marginLeft="10dp"  
+            android:background="#000000"> 
+            
+        <TextView
+        android:id="@+id/textPencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pencil"
+        android:textColor="#fff" />
+            
+        <ImageView
+        android:id="@+id/imgPencil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/slidingDrawer1"
+        android:layout_alignRight="@+id/slidingDrawer1"
+        android:src="@drawable/pen" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LEraser"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+             android:gravity="center|top"
+            android:layout_marginLeft="20dp" 
+            android:background="#000000"> 
+            
+        <TextView
+        android:id="@+id/textEraser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eraser"
+        android:textColor="#fff" />
+            
+        <ImageView
+        android:id="@+id/imgEraser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/slidingDrawer1"
+        android:layout_alignRight="@+id/slidingDrawer1"
+        android:src="@drawable/eras" />
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/LColor"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"  
+            android:background="#000000"
+             android:gravity="center|top"
+            android:layout_marginLeft="20dp" > 
+            
+        <TextView
+        android:id="@+id/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textColor="#fff" />
+            
+        <ImageView
+        android:id="@+id/imgColor"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/slidingDrawer1"
+        android:layout_alignRight="@+id/slidingDrawer1"
+        android:src="@drawable/col" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/LSave"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"  
+            android:background="#000000"
+             android:gravity="center|top"
+            android:layout_marginLeft="20dp" > 
+            
+        <TextView
+        android:id="@+id/textSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="#fff" />
+            
+        <ImageView
+        android:id="@+id/imgSave"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/slidingDrawer1"
+        android:layout_alignRight="@+id/slidingDrawer1"
+        android:src="@drawable/save" />
+        </LinearLayout>
+           
+        </LinearLayout>
+    </SlidingDrawer>
+    
+    
+    
+
+</RelativeLayout>
